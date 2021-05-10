@@ -1,11 +1,4 @@
 # Challenge Description
-In this challenge, your are asked to complete a [Flask](https://flask.palletsprojects.com)-based **API**, for a number of e-learning courses.
-
-To illustrate the API, here is a mockup of a GUI, which uses it:
-
-![Architecture](./images/ui.png)
-
-As shown, it's like a simple [Udemy](https://www.udemy.com).
 
 ## System Architecture
 The API has a very simple architecture, as shown below:
