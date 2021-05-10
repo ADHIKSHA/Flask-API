@@ -1,0 +1,173 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+    color: #000;
+    background:#f1f7dc;
+    margin: 0;
+}
+#mySearch {
+  width: 50%;height: 50px; 
+  float: right;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+
+}
+#mySearch:focus {
+  width: 100%;
+}
+
+#container {
+    margin: 10px;
+    padding: 2em 4em;
+    margin-left: 5px;
+    background:#2897B7;
+    display: inline-block;
+    width: 890px;
+}
+
+#sidebar-left{
+  float: left; 
+  width: 405px;
+  height: 600px;
+  margin-left: 30px;
+  margin-right: 20px;
+   margin-top:100px;
+    display: inline-block;
+    background:#2897B7;
+  /* Additional styling for our new layout */
+}
+
+#sidebar-right{
+  float: right; 
+  width: 405px;
+  height: 600px;
+   margin-left: 10px;
+  margin-right: 40px;
+   margin-top:100px;
+    display: inline-block;
+    background:#2897B7;
+  /* Additional styling for our new layout */
+}
+
+h1, h2 {
+    font-family: 'Droid Serif', serif;
+    font-size: 3em;
+    margin: 0;
+		padding-bottom: 1em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p, li {
+    font-size: 1.4em;
+}
+
+p.credit {
+	font-size: 0.9em;
+}
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+/* links */
+
+a {
+    color: #191970;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1484bc;
+    text-decoration: underline;
+}
+
+
+/* media queries */
+
+@media (max-width: 800px) {
+    body {
+        background: #f1f7dc;
+    }
+    #container {
+        margin: 0;
+        width: 100%;
+        padding: 2em;
+    }
+}
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 800px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
